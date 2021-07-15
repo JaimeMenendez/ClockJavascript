@@ -7,6 +7,10 @@ let s = now.getSeconds()/60*360;
 let m = now.getMinutes()/60*360+now.getSeconds()*0.1;
 let h = now.getHours()/(12)*360 + now.getMinutes()*0.5;
 
+segundero.style.transform = `rotate(${s+90}deg)`;
+minututero.style.transform = `rotate(${m+90}deg)`;
+horario.style.transform = `rotate(${h+90}deg)`;
+
 const ds = 1/60*360;
 const dm = 1/(60*60)*360;
 const dh = 1/(60*60*12)*360;
